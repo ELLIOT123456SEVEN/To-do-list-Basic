@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang ="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel ="stylesheet" href="https://ez-css.now.sh"> 
+        <link rel ="stylesheet" href="style.css">
+        <style>
+            .done {
+                text-decoration:  line-through;
+            }
+        </style>  
+        <body>
+            <main id="app">
+                <h3>{{title}}</h3>
+                <form @submit.prevent="addToDo">
+                    <label for="newToDo">New To Do</label>
+                    <input v-model="newTodo" type ="text" name="New To Do" id="NewToDo" value="">
+                    <button type ="submit" name="button">Add</button>
+                    <button  type = "button" name="button">Feeling productive</button>
+                    <button type ="button" name="button ">Want to take a rest</button>
+                </form>
+                <button @click="allDone" type="button" name="Button">Mark All Done</button>                <ul>
+                    <li v-for="todo in todos"> 
+                        <input name="Cb" type ="checkbox" v-model="todo.done">
+                        <span :class="{done : todo.done}">{{todo.title}}</span>
+                        <button @click="removeTodo(todo)" type="button" name="button">Remove-ToDo</button>
+                        <button @click = print("tips") type ="button" name =:"button">Feeling Productive</button>
+                    </li>
+                    </ul>
+                <!--<h4>{{newTodo}}</h4> -->
+            </main>
+            <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+            <script src="App.js" charset="utf-8"></script>
+        </body>
+    </head>
+</html>
