@@ -1,0 +1,50 @@
+
+body {
+ background-color: darkslategray;
+ background-image: src="Gracias.jpg";
+}
+
+h3{
+    display:-moz-popup;
+    margin-block-end: auto;
+    block-size:100px;
+    text-align :center;
+    text-size-adjust: 300;
+    font-weight: 1000;
+    background-color: orange;
+    line-height: 104px;
+    font-family: cursive;
+    height : -10px;
+}
+form {
+    font-family: cursive;
+    
+}
+.check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+.bg {
+ 
+  /* Full height */
+  height: 1000%; 
+
+}
+
+input {
+    background-color: chocolate;
+    font-family: cursive;
+    
+}
+button {
+    
+    color:darkslategrey;
+    display: block;
+    text-align: center;
+    background-color: cornsilk;
+    text-decoration-color: black;
+}
